@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>ツール箱ホーム｜ツール箱</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #ccc;
+      font-family: sans-serif;
+    }
+    header {
+      background-color: #444;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      font-weight: bold;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    header a:hover {
+      background-color: #666;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      padding: 2rem;
+    }
+    .tool-box {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 900px;
+    }
+    .tool-item {
+      background-color: #007acc;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      user-select: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+    }
+    .tool-item:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      color: #444;
+      font-size: 0.9rem;
+      background-color: #eee;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="tools/keigo/index.html">敬語変換ツール</a>
+  <a href="tools/qr-generator/index.html">QRコード作成ツール</a>
+</header>
+
+<main>
+  <div class="tool-box">
+    <a href="tools/keigo/index.html" class="tool-item">敬語変換ツール</a>
+    <a href="tools/qr-generator/index.html" class="tool-item">QRコード作成ツール</a>
+    <!-- 他のツールリンクはここに追加 -->
+  </div>
+</main>
+
+<footer>
+  © 2025 ツール箱
+</footer>
+
+</body>
+</html>
